@@ -1,0 +1,282 @@
+{
+  "authors": ["H4CK32N4U75®"],
+  "category": "technique",
+  "name": "SCOR SPACE-SHIELD Techniques",
+  "description": "ESA SPACE-SHIELD Techniques adapted to SCOR namespace. Each technique is mapped to one or more tactics, aligning with the ESA matrix structure.",
+  "source": "ESA SPACE-SHIELD Matrix",
+  "type": "scor-space-shield-techniques",
+  "uuid": "bc8e3269-0ef5-41e5-937a-1e0c9e3ff832",
+  "version": 1,
+  "values": [
+    {
+      "value": "In-orbit proximity intelligence",
+      "uuid": "00000000-0000-0000-0000-000000010001",
+      "description": "Gather intelligence on nearby space assets through proximity operations or sensors to support later attack phases.",
+      "meta": {
+        "id": "T1001",
+        "tactics": ["TA0043"],
+        "shortname": "in-orbit-proximity-intelligence"
+      }
+    },
+    {
+      "value": "RF/Optical interception",
+      "uuid": "00000000-0000-0000-0000-000000010002",
+      "description": "Intercept communication links using RF or optical ground/space assets, passively collecting TM/TC traffic.",
+      "meta": {
+        "id": "T1002",
+        "tactics": ["TA0043"],
+        "shortname": "rf-optical-interception"
+      }
+    },
+    {
+      "value": "Compromise ground segment",
+      "uuid": "00000000-0000-0000-0000-000000010003",
+      "description": "Obtain access to mission control or ground station systems through intrusion or insider compromise.",
+      "meta": {
+        "id": "T1003",
+        "tactics": ["TA0001"],
+        "shortname": "compromise-ground-segment"
+      }
+    },
+    {
+      "value": "Exploit RF command link",
+      "uuid": "00000000-0000-0000-0000-000000010004",
+      "description": "Exploit weak or unencrypted TT&C links to send malicious commands or replay legitimate commands.",
+      "meta": {
+        "id": "T1004",
+        "tactics": ["TA0001"],
+        "shortname": "exploit-rf-command-link"
+      }
+    },
+    {
+      "value": "Payload hijack",
+      "uuid": "00000000-0000-0000-0000-000000010005",
+      "description": "Gain unauthorized control of spacecraft payloads by manipulating command channels or onboard processors.",
+      "meta": {
+        "id": "T1005",
+        "tactics": ["TA0002", "TA0008"],
+        "shortname": "payload-hijack"
+      }
+    },
+    {
+      "value": "Malicious telecommand injection",
+      "uuid": "00000000-0000-0000-0000-000000010006",
+      "description": "Inject unauthorized telecommands into TT&C to alter spacecraft behavior.",
+      "meta": {
+        "id": "T1006",
+        "tactics": ["TA0002"],
+        "shortname": "malicious-telecommand-injection"
+      }
+    },
+    {
+      "value": "Insert pre-launch backdoor",
+      "uuid": "00000000-0000-0000-0000-000000010007",
+      "description": "Introduce malicious code, firmware, or hardware before launch to maintain access post-launch.",
+      "meta": {
+        "id": "T1007",
+        "tactics": ["TA0003"],
+        "shortname": "insert-prelaunch-backdoor"
+      }
+    },
+    {
+      "value": "Modify onboard software",
+      "uuid": "00000000-0000-0000-0000-000000010008",
+      "description": "Alter flight or payload software to maintain persistence or enable later privilege escalation.",
+      "meta": {
+        "id": "T1008",
+        "tactics": ["TA0003"],
+        "shortname": "modify-onboard-software"
+      }
+    },
+    {
+      "value": "Privilege escalation through bus hierarchy",
+      "uuid": "00000000-0000-0000-0000-000000010009",
+      "description": "Exploit weaknesses in bus arbitration or priority to gain higher-level access.",
+      "meta": {
+        "id": "T1009",
+        "tactics": ["TA0004"],
+        "shortname": "bus-privilege-escalation"
+      }
+    },
+    {
+      "value": "Bypass TT&C authentication",
+      "uuid": "00000000-0000-0000-0000-000000010010",
+      "description": "Exploit weak or absent authentication to access command uplinks.",
+      "meta": {
+        "id": "T1010",
+        "tactics": ["TA0005"],
+        "shortname": "bypass-ttc-auth"
+      }
+    },
+    {
+      "value": "Tamper with detection logs",
+      "uuid": "00000000-0000-0000-0000-000000010011",
+      "description": "Delete or alter on-board and ground telemetry logs to evade detection.",
+      "meta": {
+        "id": "T1011",
+        "tactics": ["TA0005"],
+        "shortname": "tamper-detection-logs"
+      }
+    },
+    {
+      "value": "Cryptographic key theft",
+      "uuid": "00000000-0000-0000-0000-000000010012",
+      "description": "Obtain TT&C or payload encryption keys through interception, insider activity, or exploitation of key management.",
+      "meta": {
+        "id": "T1012",
+        "tactics": ["TA0006"],
+        "shortname": "key-theft"
+      }
+    },
+    {
+      "value": "Memory dump analysis",
+      "uuid": "00000000-0000-0000-0000-000000010013",
+      "description": "Extract credentials or keys from spacecraft or ground segment memory dumps.",
+      "meta": {
+        "id": "T1013",
+        "tactics": ["TA0006"],
+        "shortname": "memory-dump-analysis"
+      }
+    },
+    {
+      "value": "Onboard topology enumeration",
+      "uuid": "00000000-0000-0000-0000-000000010014",
+      "description": "Enumerate internal buses, payload interfaces, and control logic for attack path planning.",
+      "meta": {
+        "id": "T1014",
+        "tactics": ["TA0007"],
+        "shortname": "onboard-topology-enum"
+      }
+    },
+    {
+      "value": "Downlink sniffing",
+      "uuid": "00000000-0000-0000-0000-000000010015",
+      "description": "Collect telemetry and payload data from downlink channels to identify exploitable behavior.",
+      "meta": {
+        "id": "T1015",
+        "tactics": ["TA0007"],
+        "shortname": "downlink-sniffing"
+      }
+    },
+    {
+      "value": "Pivot from payload to platform",
+      "uuid": "00000000-0000-0000-0000-000000010016",
+      "description": "Move laterally from compromised payload processors to the main platform control domain.",
+      "meta": {
+        "id": "T1016",
+        "tactics": ["TA0008"],
+        "shortname": "payload-to-platform-pivot"
+      }
+    },
+    {
+      "value": "Relay through compromised ground node",
+      "uuid": "00000000-0000-0000-0000-000000010017",
+      "description": "Use compromised ground stations as relays to other spacecraft or missions.",
+      "meta": {
+        "id": "T1017",
+        "tactics": ["TA0008"],
+        "shortname": "ground-relay-lateral"
+      }
+    },
+    {
+      "value": "Downlink data harvesting",
+      "uuid": "00000000-0000-0000-0000-000000010018",
+      "description": "Intercept and collect unencrypted telemetry and payload data streams.",
+      "meta": {
+        "id": "T1018",
+        "tactics": ["TA0009"],
+        "shortname": "downlink-data-harvest"
+      }
+    },
+    {
+      "value": "Payload data tampering",
+      "uuid": "00000000-0000-0000-0000-000000010019",
+      "description": "Alter or replace collected payload data to mislead operators or users.",
+      "meta": {
+        "id": "T1019",
+        "tactics": ["TA0009", "TA0040"],
+        "shortname": "payload-data-tamper"
+      }
+    },
+    {
+      "value": "TM channel exfiltration",
+      "uuid": "00000000-0000-0000-0000-000000010020",
+      "description": "Use TM downlink to exfiltrate sensitive data from the spacecraft.",
+      "meta": {
+        "id": "T1020",
+        "tactics": ["TA0010"],
+        "shortname": "tm-exfiltration"
+      }
+    },
+    {
+      "value": "Payload channel exfiltration",
+      "uuid": "00000000-0000-0000-0000-000000010021",
+      "description": "Use payload mission data downlinks to smuggle exfiltrated data.",
+      "meta": {
+        "id": "T1021",
+        "tactics": ["TA0010"],
+        "shortname": "payload-exfiltration"
+      }
+    },
+    {
+      "value": "RF C2 uplink",
+      "uuid": "00000000-0000-0000-0000-000000010022",
+      "description": "Establish command and control over the RF command uplink.",
+      "meta": {
+        "id": "T1022",
+        "tactics": ["TA0011"],
+        "shortname": "rf-c2-uplink"
+      }
+    },
+    {
+      "value": "Optical C2 uplink",
+      "uuid": "00000000-0000-0000-0000-000000010023",
+      "description": "Use optical or laser uplinks for covert C2 channels.",
+      "meta": {
+        "id": "T1023",
+        "tactics": ["TA0011"],
+        "shortname": "optical-c2-uplink"
+      }
+    },
+    {
+      "value": "Jamming",
+      "uuid": "00000000-0000-0000-0000-000000010024",
+      "description": "Disrupt downlink or uplink communications with intentional interference.",
+      "meta": {
+        "id": "T1024",
+        "tactics": ["TA0040"],
+        "shortname": "jamming"
+      }
+    },
+    {
+      "value": "Flooding attacks",
+      "uuid": "00000000-0000-0000-0000-000000010025",
+      "description": "Overwhelm ground or space communication channels with traffic to deny service.",
+      "meta": {
+        "id": "T1025",
+        "tactics": ["TA0040"],
+        "shortname": "flooding"
+      }
+    },
+    {
+      "value": "Onboard destructive command",
+      "uuid": "00000000-0000-0000-0000-000000010026",
+      "description": "Send commands to permanently damage payload, platform, or subsystems.",
+      "meta": {
+        "id": "T1026",
+        "tactics": ["TA0040"],
+        "shortname": "onboard-destruction"
+      }
+    },
+    {
+      "value": "Pre-inserted malicious hardware",
+      "uuid": "00000000-0000-0000-0000-000000010027",
+      "description": "Introduce malicious components pre-launch to enable destructive effects post-deployment.",
+      "meta": {
+        "id": "T1027",
+        "tactics": ["TA0040"],
+        "shortname": "malicious-hardware"
+      }
+    }
+  ]
+}
